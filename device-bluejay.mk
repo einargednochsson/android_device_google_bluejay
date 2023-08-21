@@ -196,6 +196,11 @@ PRODUCT_PACKAGES += \
 # NowPlayingOverlay
 PRODUCT_PACKAGES += \
         NowPlayingOverlay
+        
+# GoogleCamera
+PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
+PRODUCT_PACKAGES += \
+    GoogleCamera
 
 # SKU specific RROs
 PRODUCT_PACKAGES += \
