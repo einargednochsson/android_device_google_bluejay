@@ -141,5 +141,22 @@ PRODUCT_PACKAGES += \
     com.google.hardware.pixel.display-V4-ndk.vendor:64 \
     com.google.hardware.pixel.display-V6-ndk.vendor
 
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/app/WeatherIcons/WeatherIcons.apk \
+    system/etc/init/smartcharge-init.rc \
+    system/etc/permissions/android.hardware.biometrics.face.xml \
+    system/etc/permissions/org.lineageos.audio.xml \
+    system/etc/permissions/org.lineageos.hardware.xml \
+    system/etc/permissions/org.lineageos.livedisplay.xml \
+    system/etc/permissions/org.lineageos.performance.xml \
+    system/etc/permissions/org.lineageos.profiles.xml \
+    system/etc/permissions/org.lineageos.settings.xml \
+    system/etc/permissions/org.lineageos.trust.xml \
+    system/etc/permissions/privapp-permissions-google.xml \
+    system/etc/sensitive_pn.xml \
+    system/fonts/RobotoFallback-VF.ttf \
+    system/media/bootanimation.zip \
+    system/priv-app/DocumentsUIGoogle/DocumentsUIGoogle.apk \
+
 # Properties
 TARGET_VENDOR_PROP := $(LOCAL_PATH)/vendor.prop
