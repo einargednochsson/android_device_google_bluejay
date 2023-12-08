@@ -6,7 +6,7 @@
 
 # Inherit some common Derpfest stuff.
 TARGET_DISABLE_EPPE := true
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/derp/config/common_full_phone.mk)
 TARGET_GAPPS_ARCH := arm64
 IS_PHONE := true
 DERP_BUILDTYPE := Official
