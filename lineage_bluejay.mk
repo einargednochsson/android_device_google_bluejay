@@ -8,6 +8,17 @@
 TARGET_DISABLE_EPPE := true
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Matrixx
+MATRIXX_BUILD_TYPE := Official
+MATRIXX_MAINTAINER := EinarG.
+MATRIXX_CHIPSET := GS101
+MATRIXX_BATTERY := 4410mah
+MATRIXX_DISPLAY := 1080x2400
+
+# Gapps
+WITH_GAPPS := true
+TARGET_GAPPS_ARCH := arm64
+
 # Inherit device configuration
 $(call inherit-product, device/google/bluejay/aosp_bluejay.mk)
 $(call inherit-product, device/google/gs101/lineage_common.mk)
