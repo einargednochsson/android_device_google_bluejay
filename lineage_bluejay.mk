@@ -18,6 +18,9 @@ MATRIXX_DISPLAY := 1080x2400
 # Gapps
 WITH_GAPPS := true
 TARGET_GAPPS_ARCH := arm64
+BUILD_GOOGLE_CONTACTS := true
+BUILD_GOOGLE_DIALER := true
+BUILD_GOOGLE_MESSAGE := true
 
 # Inherit device configuration
 $(call inherit-product, device/google/bluejay/aosp_bluejay.mk)
