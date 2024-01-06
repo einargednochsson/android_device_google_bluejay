@@ -17,11 +17,21 @@ MATRIXX_DISPLAY := 1080x2400
 
 # Gapps
 WITH_GMS := true
-TARGET_GAPPS_ARCH := arm64
-BUILD_GOOGLE_CONTACTS := true
-BUILD_GOOGLE_DIALER := true
-BUILD_GOOGLE_MESSAGE := true
-BUILD_GOOGLE_CAMERA := true
+TARGET_SUPPORTS_GOOGLE_EXTRAS := true
+TARGET_SUPPORTS_QUICK_TAP := true
+
+TARGET_PREBUILT_PIXEL_LAUNCHER := true
+# Ship pixel features (adaptivecharging, dreamliner etc)
+TARGET_ENABLE_PIXEL_FEATURES := true
+# Use google telephony framework
+TARGET_USE_GOOGLE_TELEPHONY := true
+# Use gs101 hotword blobs
+TARGET_PREBUILT_GOOGLE_CAMERA := true
+TARGET_PREBUILT_HOTWORD := true
+TARGET_PREBUILT_HOTWORD_TYPE := tensor_gs101
+
+TARGET_HAS_UDFPS := true
+TARGET_ENABLE_BLUR := true
 
 # Inherit device configuration
 $(call inherit-product, device/google/bluejay/aosp_bluejay.mk)

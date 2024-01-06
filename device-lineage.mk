@@ -15,10 +15,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.euicc.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.euicc.xml
 
-# HBM
-PRODUCT_PACKAGES := \
-    HbmSVManagerOverlay
-
 # Build necessary packages for vendor
 
 # Audio
@@ -165,3 +161,6 @@ PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
 
 # Properties
 TARGET_VENDOR_PROP := $(LOCAL_PATH)/vendor.prop
+
+# PixelParts
+include packages/apps/PixelParts/device.mk
