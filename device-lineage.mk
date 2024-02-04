@@ -144,3 +144,6 @@ PRODUCT_PACKAGES += \
 
 # Properties
 TARGET_VENDOR_PROP := $(LOCAL_PATH)/vendor.prop
+
+# PixelParts
+include packages/apps/PixelParts/device.mk
