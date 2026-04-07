@@ -16,6 +16,8 @@ PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST := %
 #Bcr
 $(call inherit-product, vendor/bcr/bcr.mk)
 
+$(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
+
 # Inherit from gs101
 include device/google/gs101/common.mk
 
