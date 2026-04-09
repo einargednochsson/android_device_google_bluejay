@@ -14,7 +14,6 @@ EXTRA_UDFPS_ICONS := true
 TARGET_IS_PIXEL := true
 TARGET_IS_PIXEL_6 := true
 
-# ViPER4Android FX
 $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 
 # Inherit device configuration
